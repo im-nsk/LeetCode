@@ -22,15 +22,11 @@ class Solution {
       }
       
       if(p1!= null)
-      {
         list.next = p1;
-      }
-      
+
       if(p2!= null)
-      {
         list.next = p2;
-      }
-      
+        
        return head.next;
         
     }
