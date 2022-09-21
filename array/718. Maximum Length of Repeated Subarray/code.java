@@ -23,5 +23,5 @@ class Solution {
     }
 }
 
-// for detailed clarification watch video: by going csLand on youtube: or click the link: 
-// 
+// for detailed clarification watch video: by going csLand on youtube: or click the link below: 
+ https://www.youtube.com/watch?v=a58tcRe2zQ8
