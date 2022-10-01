@@ -12,7 +12,8 @@ class Solution {
        // get the area by multiple of min height[left], height[right] and right-left:   
         area = Math.max(area, Math.min(height[left], height[right])*(right-left));
         
-         // 
+         // if left is greater than right support will be there from left side , so traversal toward left by reducing right:
+         // and if right is greater than left support will be there from right side , so traversal toward right by icreasing left: 
           if(height[left] > height[right])
             right--;
           else
