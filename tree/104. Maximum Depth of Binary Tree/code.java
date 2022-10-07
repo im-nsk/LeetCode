@@ -1,3 +1,5 @@
+Solution1:
+
 class Solution {
     private int heightOfTree(TreeNode root){
       // base is if null then return 0:  
@@ -14,6 +16,21 @@ class Solution {
     }
     public int maxDepth(TreeNode root) {
         return heightOfTree(root);
+        
+    }
+}
+
+Solution2:
+
+class Solution {
+    private int findDepth(TreeNode root){
+        if(root == null)
+            return 0;
+        return 1+ Math.max(findDepth(root.right), findDepth(root.left));
+    }
+    public int maxDepth(TreeNode root) {
+        if(root == null) return 0;
+        return findDepth(root);
         
     }
 }
