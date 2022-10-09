@@ -23,7 +23,7 @@ class Solution {
                     k--;
                 else
                     j++;
-                
+                // if currSum - target is less then result = currSum
                 if(Math.abs(currSum - target) < Math.abs(result - target))
                     result = currSum;
             }
