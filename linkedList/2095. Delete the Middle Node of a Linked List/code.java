@@ -1,3 +1,5 @@
+https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/
+
 class Solution {
     public ListNode deleteMiddle(ListNode head) {
         if(head.next == null) return null;
