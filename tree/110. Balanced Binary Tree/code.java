@@ -1,13 +1,10 @@
 class Solution {
-    private int findAvl(TreeNode root){
-        if(root == null) return 0;
-        return 1+ Math.max(findAvl(root.left), findAvl(root.right));
+    private int getHeight(TreeNode node){
+        
+        if(node == null) return 0;
+        return 1+Math.max(getHeight(node.left),getHeight(node.right));
     }
     public boolean isBalanced(TreeNode root) {
-        if(root == null) return true;
-        int lh = findAvl(root.left);
-        int rh = findAvl(root.right);
-        
-        return Math.abs(lh-rh) < 2 && isBalanced(root.left) && isBalanced(root.right);
+        if(root == null) return true; 
+        return (Math.abs(getHeight(root.left)-getHeight(root.right)))<=1 && isBalanced(root.left) && isBalanced(root.right);
     }
-}
